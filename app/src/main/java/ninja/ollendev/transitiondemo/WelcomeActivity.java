@@ -2,6 +2,8 @@ package ninja.ollendev.transitiondemo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.AutoTransition;
 import android.transition.ChangeBounds;
@@ -25,7 +27,7 @@ import butterknife.OnClick;
 /**
  * An example intro screen to show a simple transition.
  */
-public class WelcomeActivity extends AppCompatActivity implements Transition.TransitionListener {
+public class WelcomeActivity extends AppCompatActivity {
     @Bind(R.id.root) FrameLayout rootLayout;
     @Bind(R.id.snowflakeLayout) RelativeLayout snowflakeLayout;
     @Bind(R.id.triangle1) View triangle1;
@@ -39,21 +41,37 @@ public class WelcomeActivity extends AppCompatActivity implements Transition.Tra
         setContentView(R.layout.activity_welcome);
 
         ButterKnife.bind(this);
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setPreViewTransitionState();
+        runTransitionDelayed();
+    }
+
+    private void setPreViewTransitionState() {
         snowflakeLayout.setVisibility(View.GONE);
         triangle1.setVisibility(View.GONE);
         triangle2.setVisibility(View.GONE);
         triangle3.setVisibility(View.GONE);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+    private void runTransitionDelayed() {
+        Handler handler = new Handler(Looper.getMainLooper());
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                animateIntro();
+            }
+        };
+        handler.postDelayed(runnable, 500);
     }
 
     @OnClick(R.id.enter_button)
     public void enterClicked() {
-        animateIntro();
+        Intent intent = new Intent(this, SnowReportActivity.class);
+        startActivity(intent);
     }
 
     private void animateIntro() {
@@ -77,33 +95,6 @@ public class WelcomeActivity extends AppCompatActivity implements Transition.Tra
                 .setOrdering(TransitionSet.ORDERING_TOGETHER)
                 .setDuration(1000)
                 .setInterpolator(new AccelerateDecelerateInterpolator());
-        transitionSet.addListener(this);
         TransitionManager.beginDelayedTransition(rootLayout, transitionSet);
-    }
-
-    @Override
-    public void onTransitionStart(Transition transition) {
-
-    }
-
-    @Override
-    public void onTransitionEnd(Transition transition) {
-        Intent intent = new Intent(this, SnowReportActivity.class);
-        startActivity(intent);
-    }
-
-    @Override
-    public void onTransitionCancel(Transition transition) {
-
-    }
-
-    @Override
-    public void onTransitionPause(Transition transition) {
-
-    }
-
-    @Override
-    public void onTransitionResume(Transition transition) {
-
     }
 }

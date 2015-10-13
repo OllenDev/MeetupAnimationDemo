@@ -20,6 +20,7 @@
         android:layout_height="380dp">
 
         <LinearLayout
+            android:id="@+id/graphContainer"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -31,8 +32,10 @@
             <View
                 android:id="@+id/sunBar"
                 android:layout_width="43dp"
-                android:layout_height="0dp"
-                android:background="@color/nevada"/>
+                android:layout_height="match_parent"
+                android:background="@color/nevada"
+                android:scaleY="0.0"
+                android:transformPivotY="380dp"/>
 
             <View
                 android:layout_width="1dp"
@@ -42,8 +45,10 @@
             <View
                 android:id="@+id/monBar"
                 android:layout_width="45dp"
-                android:layout_height="0dp"
-                android:background="@color/nevada"/>
+                android:layout_height="match_parent"
+                android:background="@color/nevada"
+                android:scaleY="0.0"
+                android:transformPivotY="380dp"/>
 
             <View
                 android:layout_width="1dp"
@@ -53,8 +58,10 @@
             <View
                 android:id="@+id/tueBar"
                 android:layout_width="45dp"
-                android:layout_height="0dp"
-                android:background="@color/nevada"/>
+                android:layout_height="match_parent"
+                android:background="@color/nevada"
+                android:scaleY="0.0"
+                android:transformPivotY="380dp"/>
 
             <View
                 android:layout_width="1dp"
@@ -64,8 +71,10 @@
             <View
                 android:id="@+id/wedBar"
                 android:layout_width="45dp"
-                android:layout_height="0dp"
-                android:background="@color/nevada"/>
+                android:layout_height="match_parent"
+                android:background="@color/nevada"
+                android:scaleY="0.0"
+                android:transformPivotY="380dp"/>
 
             <View
                 android:layout_width="1dp"
@@ -75,8 +84,10 @@
             <View
                 android:id="@+id/thuBar"
                 android:layout_width="45dp"
-                android:layout_height="0dp"
-                android:background="@color/nevada"/>
+                android:layout_height="match_parent"
+                android:background="@color/nevada"
+                android:scaleY="0.0"
+                android:transformPivotY="380dp"/>
 
             <View
                 android:layout_width="1dp"
@@ -86,8 +97,10 @@
             <View
                 android:id="@+id/friBar"
                 android:layout_width="45dp"
-                android:layout_height="0dp"
-                android:background="@color/nevada"/>
+                android:layout_height="match_parent"
+                android:background="@color/nevada"
+                android:scaleY="0.0"
+                android:transformPivotY="380dp"/>
 
             <View
                 android:layout_width="1dp"
@@ -95,10 +108,12 @@
                 android:background="@android:color/white"/>
 
             <View
-                android:id="@+id/sunBar"
+                android:id="@+id/satBar"
                 android:layout_width="45dp"
-                android:layout_height="0dp"
-                android:background="@color/nevada"/>
+                android:layout_height="match_parent"
+                android:background="@color/nevada"
+                android:scaleY="0.0"
+                android:transformPivotY="380dp"/>
         </LinearLayout>
     </FrameLayout>
 
@@ -156,14 +171,15 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/animate"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="bottom"
             android:background="@color/nevada"
             android:gravity="center"
             android:text="Chamonix"
-            android:textColor="@android:color/white"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
             android:textSize="36dp"/>
     </FrameLayout>
 
