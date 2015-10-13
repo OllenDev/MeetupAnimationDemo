@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8795AF</color>
+    <color name="colorPrimaryDark">#666D7C</color>
+    <color name="colorAccent">#C0D3EB</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="nevada">#666D7C</color>
+    <color name="ghost">#C8CCD5</color>
+    <color name="cool_gray">#8795AF</color>
+    <color name="beau_blue">#C0D3EB</color>
+</resources>

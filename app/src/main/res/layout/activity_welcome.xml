@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/nevada"
+             tools:context=".WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="top|center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingStart="50dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_snowflake"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingStart="70dp"
+            android:paddingTop="100dp"
+            android:src="@drawable/ic_snowflake"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingStart="150dp"
+            android:paddingTop="60dp"
+            android:src="@drawable/ic_snowflake"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingStart="200dp"
+            android:paddingTop="190dp"
+            android:src="@drawable/ic_snowflake"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingStart="220dp"
+            android:paddingTop="110dp"
+            android:src="@drawable/ic_snowflake"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingEnd="20dp"
+            android:paddingTop="25dp"
+            android:src="@drawable/ic_snowflake"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingEnd="30dp"
+            android:paddingTop="170dp"
+            android:src="@drawable/ic_snowflake"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:contentDescription="@null"
+        android:paddingEnd="-70dp"
+        android:src="@drawable/ic_triangle3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_triangle2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:contentDescription="@null"
+        android:paddingStart="-70dp"
+        android:src="@drawable/ic_triangle1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@color/black_overlay"
+        android:fitsSystemWindows="true">
+        
+        <Button
+            android:id="@+id/dummy_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/enter"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"/>
+
+    </FrameLayout>
+
+</FrameLayout>
