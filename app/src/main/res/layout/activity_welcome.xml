@@ -11,6 +11,7 @@
         android:layout_gravity="top|center">
 
         <ImageView
+            android:id="@+id/snowflake1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -21,6 +22,7 @@
             android:src="@drawable/ic_snowflake"/>
 
         <ImageView
+            android:id="@+id/snowflake2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -31,6 +33,7 @@
             android:src="@drawable/ic_snowflake"/>
 
         <ImageView
+            android:id="@+id/snowflake3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -41,6 +44,7 @@
             android:src="@drawable/ic_snowflake"/>
 
         <ImageView
+            android:id="@+id/snowflake4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -51,6 +55,7 @@
             android:src="@drawable/ic_snowflake"/>
 
         <ImageView
+            android:id="@+id/snowflake5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -61,6 +66,7 @@
             android:src="@drawable/ic_snowflake"/>
 
         <ImageView
+            android:id="@+id/snowflake6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -71,6 +77,7 @@
             android:src="@drawable/ic_snowflake"/>
 
         <ImageView
+            android:id="@+id/snowflake7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -110,9 +117,9 @@
         android:layout_gravity="center_horizontal|bottom"
         android:background="@color/black_overlay"
         android:fitsSystemWindows="true">
-        
+
         <Button
-            android:id="@+id/dummy_button"
+            android:id="@+id/enter_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

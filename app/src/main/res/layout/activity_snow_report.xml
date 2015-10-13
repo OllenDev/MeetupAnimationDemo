@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ninja.ollendev.transitiondemo.SnowReportActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Week's Snow Totals"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="1dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:background="@color/nevada"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/nevada"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+            <View
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/nevada"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+            <View
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/nevada"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+            <View
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/nevada"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+            <View
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/nevada"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+            <View
+                android:layout_width="45dp           "
+                android:layout_height="match_parent"
+                android:background="@color/nevada"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Sun"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Mon"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Tue"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Wed"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Thu"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Fri"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Sat"/>
+    </LinearLayout>
+
+</LinearLayout>
