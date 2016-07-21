@@ -42,6 +42,7 @@ public class SnowReportActivity extends AppCompatActivity {
             }
         };
         handler.postDelayed(runnable, 500);
+//        animateGraph();
     }
 
     @OnClick(R.id.animate)
@@ -62,8 +63,7 @@ public class SnowReportActivity extends AppCompatActivity {
 
     private void startTransition() {
         BarGraphTransition transition = new BarGraphTransition();
-                transition
-                .setDuration(500l)
+                transition.setDuration(500l)
                 .setInterpolator(new AccelerateDecelerateInterpolator());
         TransitionManager.beginDelayedTransition(graphContainer, transition);
     }
